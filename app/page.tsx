@@ -4,7 +4,7 @@
 const whatsappMessage =
   "Olá, represento uma empresa e vim pelo site da LS Consultoria. Gostaria de avaliar uma vaga que precisamos preencher.";
 const whatsappUrl = `https://wa.me/5561981976920?text=${encodeURIComponent(whatsappMessage)}`;
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ls-consultoria-recrutamento.pages.dev";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://lsrecrutamento.com.br";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -14,7 +14,7 @@ const organizationSchema = {
   taxID: "48.012.408/0001-00",
   url: siteUrl,
   logo: `${siteUrl}/logo-ls-consultoria.webp`,
-  email: "lscontabilidadebrasil@gmail.com",
+  email: "contato@lsrecrutamento.com.br",
   telephone: "+55 61 98197-6920",
   address: {
     "@type": "PostalAddress",
@@ -331,7 +331,7 @@ export default function Home() {
           </div>
         </div>
         <div className="shell copyright">
-          LS CONSULTORIA TRIBUTARIA E CONTABIL LTDA · CNPJ 48.012.408/0001-00 · lscontabilidadebrasil@gmail.com<br />
+          LS CONSULTORIA TRIBUTARIA E CONTABIL LTDA · CNPJ 48.012.408/0001-00 · contato@lsrecrutamento.com.br<br />
           © 2026 LS Consultoria Tributária e Contábil. Todos os direitos reservados.
         </div>
       </footer>
