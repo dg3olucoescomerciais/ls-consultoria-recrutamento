@@ -45,6 +45,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-18345572022');
+
+              document.addEventListener('click', function(event) {
+                var target = event.target;
+                if (!target || !target.closest) return;
+
+                var whatsappLink = target.closest(
+                  'a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com"]'
+                );
+
+                if (!whatsappLink) return;
+
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-18345572022/ZowACMWr5dccELbt7KtE'
+                });
+              }, true);
             `,
           }}
         />
