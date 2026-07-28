@@ -37,6 +37,17 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="pt-BR">
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18345572022" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18345572022');
+            `,
+          }}
+        />
         <link rel="preload" as="image" href="/hero-recruitment-b2b-mobile.webp" media="(max-width: 760px)" />
         <link rel="preload" as="image" href="/hero-recruitment-b2b.webp" media="(min-width: 761px)" />
       </head>
