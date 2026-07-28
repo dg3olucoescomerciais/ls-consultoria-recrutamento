@@ -57,7 +57,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 if (!whatsappLink) return;
 
                 gtag('event', 'conversion', {
-                  'send_to': 'AW-18345572022/ZowACMWr5dccELbt7KtE'
+                  'send_to': 'AW-18345572022/ZowACMWr5dccELbt7KtE',
+                  'value': 0.0,
+                  'currency': 'BRL'
                 });
               }, true);
             `,
